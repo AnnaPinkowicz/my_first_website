@@ -1,0 +1,28 @@
+{% extends "me.html" %}
+
+
+        {% block content1 %}
+        <div style="background-color: white; font-size: 15px;padding: 10px; box-shadow: 3px 3px grey; margin-bottom: 10px">  
+            <b><h2 style ="color: purple">Kontakt</h2></b>
+                <ul>
+	                <li><b>email:</b> pinkowicz.anna@gmail.com</li>
+	                <li><b>telefon:</b> 00 49 176 47589 </li>
+                </ul>
+        </div>
+        {% endblock %}
+
+
+        {% block content2 %}
+        <div style="background-color: white; font-size: 15px;padding: 10px; box-shadow: 3px 3px grey; margin-bottom: 10px">
+            <h2 style="font-family: Verdana; color: purple"><b>Wyslij wiadomosc </b></h2>
+            <form action="" method="post">
+                <form method="POST">
+                  Message: <input type="text" name="message"><br>
+                  <input type="submit" value="Submit"><br>
+                </form>
+                {% if message %} Dziękuję za wiadomość {% endif %}
+            </form>
+        </div>
+        {% endblock %}
+
+

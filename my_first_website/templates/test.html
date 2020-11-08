@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title> About me </title>
+</head>
+<body>
+
+<header>
+    {% block head %}
+    To header DEFAULT - dziedziczenie szablonów
+    {% endblock %}
+</header>
+
+<main>
+    {% block body %}
+    To body DEFAULT - dziedziczenie szablonów
+    {% endblock %}
+</main>
+
+<footer>
+    {% block footer %}
+    To footer DEFAULT - dziedziczenie szablonów
+    {% endblock %}
+</footer>
+
+</body>
+</html>
